@@ -1,21 +1,8 @@
-/*pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-}*/
-
-
 pipeline {   
-  /*environment {
+  environment {
     dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
-  }*/
+  }
     
   agent any
     
@@ -62,10 +49,18 @@ pipeline {
     }*/
   }  
 }
-    
 
 
+// ############## pipeline test ##############
+/*pipeline {
+    agent any
 
-
-
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}*/
 
