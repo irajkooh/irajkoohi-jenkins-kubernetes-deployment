@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
 
     stages {
@@ -8,10 +8,10 @@ pipeline {
             }
         }
     }
-}
+}*/
 
 
-/*pipeline {
+pipeline {
 
   environment {
     dockerimagename = "irajkoohi/react-app"
@@ -19,14 +19,6 @@ pipeline {
   }
 
   agent any
-  
-  stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
 
   stages {
 
@@ -68,7 +60,7 @@ pipeline {
 
   }
 
-}*/
+}
 
 
 
