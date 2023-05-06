@@ -12,6 +12,7 @@
 
 
 pipeline {
+    
   environment {
     dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
@@ -20,11 +21,6 @@ pipeline {
   agent any
     
   stages {  
-    /*stage('Checkout SCM') {
-      steps {            
-        git branch: 'branchName', credentialsId: 'your_credentials', url: "giturlrepo"
-      }
-    }*/
     stage('Checkout Source') {
       steps {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'   
