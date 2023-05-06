@@ -1,4 +1,17 @@
 pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+
+/*pipeline {
 
   environment {
     dockerimagename = "irajkoohi/react-app"
@@ -15,16 +28,16 @@ pipeline {
         }
     }
 
-  /*stages {
+  stages {
 
     stage('Checkout Source') {
       steps {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment_repo.git'
       }
     }
-  }*/
+  }
 
-    /*stage('Build image') {
+    stage('Build image') {
       steps{
         script {
           dockerImage = docker.build dockerimagename
@@ -53,9 +66,9 @@ pipeline {
       }
     }
 
-  }*/
+  }
 
-}
+}*/
 
 
 
