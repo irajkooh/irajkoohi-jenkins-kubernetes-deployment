@@ -7,22 +7,22 @@ pipeline {
 
   agent any
   
-  /*stages {
+  stages {
         stage('Hello') {
             steps {
                 echo 'Hello World'
             }
         }
-    }*/
+    }
 
-  stages {
+  /*stages {
 
     stage('Checkout Source') {
       steps {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment_repo.git'
       }
     }
-  }
+  }*/
 
     /*stage('Build image') {
       steps{
