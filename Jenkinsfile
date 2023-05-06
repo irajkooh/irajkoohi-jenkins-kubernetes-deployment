@@ -35,7 +35,7 @@ pipeline {
     }
   }
   
-    /*stage('Build image') {
+    stage('Build image') {
       steps {
         script {
           dockerImage = docker.build dockerimagenam
@@ -43,7 +43,7 @@ pipeline {
       }
     }
 
-    stage('Pushing Image') {
+    /*stage('Pushing Image') {
       environment {
         registryCredential = 'dockerhub-credentials'
         }
