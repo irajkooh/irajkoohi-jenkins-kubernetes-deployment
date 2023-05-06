@@ -1,6 +1,6 @@
 pipeline {   
   environment {
-    dockerimagename = "irajkoohi/react-app"
+    dockerImageName = "bravinwasike/react-app"
     dockerImage = ""
   }
     
@@ -23,7 +23,7 @@ pipeline {
     stage('Build image') {
       steps {
         script {
-          dockerImage = docker.build dockerimagenam
+          dockerImage = docker.build dockerImageName
         }
       }
     }
