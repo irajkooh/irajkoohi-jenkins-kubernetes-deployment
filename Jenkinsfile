@@ -20,17 +20,16 @@ pipeline {
   agent any
     
   stages {  
-    stage('Checkout SCM') {
+    /*stage('Checkout SCM') {
       steps {            
         git branch: 'branchName', credentialsId: 'your_credentials', url: "giturlrepo"
       }
-    }
+    }*/
     stage('Checkout Source') {
       steps {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'   
       }
     }
-
   /*stage('Build image') {
       steps{
         script {
@@ -38,7 +37,6 @@ pipeline {
         }
       }
     }
-
     stage('Pushing Image') {
       environment {
                registryCredential = 'dockerhub-credentials'
@@ -51,7 +49,6 @@ pipeline {
         }
       }
     }
-
     stage('Deploying React.js container to Kubernetes') {
       steps {
         script {
@@ -59,9 +56,7 @@ pipeline {
         }
       }
     }
-
   }*/
-
 }
 
 
