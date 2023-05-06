@@ -30,7 +30,7 @@ pipeline {
     }
   }
     
-    stage('Build image') {
+    /*stage('Build image') {
       steps {
         script {
           dockerImage = docker.build dockerimagenam
@@ -58,7 +58,7 @@ pipeline {
       }
     }
 
-  }
+  }*/
   
 }
     
