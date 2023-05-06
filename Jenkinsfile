@@ -27,6 +27,7 @@ pipeline {
       }
     }
   }
+}
   /*stage('Build image') {
       steps{
         script {
