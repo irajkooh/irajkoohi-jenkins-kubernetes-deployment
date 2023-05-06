@@ -23,15 +23,8 @@ pipeline {
   stages {  
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'   
-      }
-    }
-  }
-  stage('Build image') {
-      steps{
-        script {
-          dockerImage = docker.build dockerimagename
-        }
+        //git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'   
+        git 'https://github.com/Bravinsimiyu/jenkins-kubernetes-deployment.git'
       }
     }
 }
