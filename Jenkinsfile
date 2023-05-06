@@ -11,8 +11,7 @@
 }*/
 
 
-pipeline {
-    
+pipeline {   
   /*environment {
     dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
@@ -33,7 +32,6 @@ pipeline {
         //sh "ls -lat"  */
       }
     }
-  }
   
     /*stage('Build image') {
       steps {
@@ -53,7 +51,7 @@ pipeline {
           dockerImage.push("latest")
         }
       }
-    }*/
+    }*/  
 
     /*stage('Deploying React.js container to Kubernetes') {
       steps {
@@ -62,9 +60,7 @@ pipeline {
         }
       }
     }*/
-
-  }
-  
+  }  
 }
     
 
