@@ -35,13 +35,13 @@ pipeline {
     }
   }
   
-    stage('Build image') {
+    /*stage('Build image') {
       steps {
         script {
           dockerImage = docker.build dockerimagenam
         }
       }
-    }
+    }*/
 
     /*stage('Pushing Image') {
       environment {
@@ -53,17 +53,17 @@ pipeline {
           dockerImage.push("latest")
         }
       }
-    }
+    }*/
 
-    stage('Deploying React.js container to Kubernetes') {
+    /*stage('Deploying React.js container to Kubernetes') {
       steps {
         script {
           kubernetesDeploy(configs: "deployment.yaml", "service.yaml")
         }
       }
-    }
+    }*/
 
-  }*/
+  }
   
 }
     
