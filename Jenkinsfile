@@ -14,7 +14,7 @@
 pipeline {
     
   environment {
-    dockerimagename = "bravinwasike/react-app"
+    dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
   }
     
@@ -27,15 +27,15 @@ pipeline {
       }
     }
   }
-}
-  /*stage('Build image') {
+  stage('Build image') {
       steps{
         script {
           dockerImage = docker.build dockerimagename
         }
       }
     }
-    stage('Pushing Image') {
+}
+    /*stage('Pushing Image') {
       environment {
                registryCredential = 'dockerhub-credentials'
            }
