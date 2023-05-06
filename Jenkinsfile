@@ -30,6 +30,7 @@ pipeline {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'   
       }
     }
+  }
   /*stage('Build image') {
       steps{
         script {
@@ -56,8 +57,8 @@ pipeline {
         }
       }
     }
-  }*/
-}
+  }
+}*/
 
 
 
