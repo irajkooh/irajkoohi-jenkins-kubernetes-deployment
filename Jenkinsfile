@@ -13,10 +13,10 @@
 
 pipeline {
     
-  environment {
+  /*environment {
     dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
-  }
+  }*/
     
   agent any
     
@@ -27,7 +27,7 @@ pipeline {
         git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git  '
       }
     }
-}
+  }
 }
     
 
