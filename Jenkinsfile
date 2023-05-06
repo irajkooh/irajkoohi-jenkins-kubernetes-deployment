@@ -13,10 +13,10 @@
 
 pipeline {
     
-  environment {
+  /*environment {
     dockerimagename = "irajkoohi/react-app"
     dockerImage = ""
-  }
+  }*/
     
   agent any
     
