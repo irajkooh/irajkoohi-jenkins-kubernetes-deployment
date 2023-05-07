@@ -22,7 +22,7 @@ pipeline {
       }
     }
     
-    stage('Maven Install') {
+    /*stage('Maven Install') {
     	agent {
       	docker {
         	image 'maven:3.5.0'
@@ -31,7 +31,7 @@ pipeline {
       steps {
       	sh 'mvn clean install'
       }
-    }
+    }*/
   
     // This Jenkins Pipeline stage will use the created Dockerfile to build a Docker image named ‘irajkoohi/react-app’.
     /*stage('Build image') {
@@ -63,6 +63,15 @@ pipeline {
     }*/
   }  
 }
+
+
+
+
+
+
+
+
+
 
 
 // ############## pipeline test ##############
