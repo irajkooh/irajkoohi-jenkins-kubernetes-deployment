@@ -12,7 +12,9 @@ pipeline {
       steps {
         // git 'https://github.com/Bravinsimiyu/jenkins-kubernetes-deployment.git'
         //git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'
+        
         checkout scm  // if jenkins project is setup by scm (Source Control Management)
+        
         /*git branch: 'my_specific_branch',
             credentialsId: 'my_cred_id',
             url: 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'  
