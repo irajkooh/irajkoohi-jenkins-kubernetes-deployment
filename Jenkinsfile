@@ -1,6 +1,6 @@
 pipeline {   
   environment {
-    dockerImageName = "bravinwasike/react-app"
+    dockerImageName = "react-app"
     dockerImage = ""
   }
     
@@ -21,7 +21,8 @@ pipeline {
         //sh "ls -lat"  */
       }
     }
-  
+    
+    // This Jenkins Pipeline stage will use the created Dockerfile to build a Docker image named ‘irajkoohi/react-app’.
     stage('Build image') {
       steps {
         script {
