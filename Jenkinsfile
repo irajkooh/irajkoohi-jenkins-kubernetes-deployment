@@ -12,8 +12,9 @@ pipeline {
     
     //registry = "<dockerhub-username>/<repo-name>"
     //registryCredential = '<dockerhub-credential-name>'  
-    registry = "irajkoohi@gmail.com/jenkins-kubernetes-deployment"
-    registryCredential = 'Ist1337#%'        
+    
+    //registry = "irajkoohi@gmail.com/jenkins-kubernetes-deployment"
+    //registryCredential = 'Ist1337#%'        
   }
     
   stages {  
