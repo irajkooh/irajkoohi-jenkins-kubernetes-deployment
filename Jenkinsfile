@@ -32,8 +32,6 @@ pipeline {
         checkout scm  // if jenkins project is setup by scm (Source Control Management) option
       }
     }
-  }  
-    
   
     /*stage('Building image') {
       steps{
