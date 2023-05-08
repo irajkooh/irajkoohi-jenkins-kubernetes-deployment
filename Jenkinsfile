@@ -1,5 +1,6 @@
 pipeline {   
   
+  agent any  
   
   /*options {
     buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
@@ -16,7 +17,7 @@ pipeline {
     //registry = "irajkoohi@gmail.com/jenkins-kubernetes-deployment"
     //registryCredential = 'Ist1337#%'        
   }
-  agent any  
+  
   stages {  
       
     stage('Checkout Source') {
@@ -31,6 +32,8 @@ pipeline {
         checkout scm  // if jenkins project is setup by scm (Source Control Management) option
       }
     }
+  }  
+    
   
     /*stage('Building image') {
       steps{
