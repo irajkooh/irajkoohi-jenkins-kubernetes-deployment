@@ -33,20 +33,22 @@ pipeline {
       }
     }*/
     
-    stage('Initialize'){
+    /*stage('Initialize'){
       steps {
         script {
           def dockerHome = tool 'myDocker'
           env.PATH = "${dockerHome}/bin:${env.PATH}"
         }  
       }  
-    }  
+    } */ 
     
     // This Jenkins Pipeline stage will use the created Dockerfile to build a Docker image named "react-app"
     stage('Build image') {
       steps {
         script {
+          def dockerHome = tool 'myDocker'
           dockerImage = docker.build dockerImageName
+          env.PATH = "${dockerHome}/bin:${env.PATH}"
         }
       }
     }
