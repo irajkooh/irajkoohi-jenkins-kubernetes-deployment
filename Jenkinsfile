@@ -8,7 +8,7 @@ pipeline {
   }*/
   
   environment {
-    dockerImageName = "irajkoohi/react-app"
+    dockerImageName = "react-app"
     dockerImage = ""
     
     //registry = "<dockerhub-username>/<repo-name>"
