@@ -33,13 +33,14 @@ pipeline {
       }
     }
   
-    /*stage('Building image') {
+    stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+          dockerImage = docker.build registry + dockerImageName
+          //dockerImage = docker.build registry + ":$BUILD_NUMBER"
         }
       }
-    }*/    
+    }   
     
     // test
     /*stage('Maven Install') {
