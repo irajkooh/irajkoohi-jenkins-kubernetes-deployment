@@ -1,5 +1,5 @@
 pipeline {   
-  agent any
+  
   
   /*options {
     buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
@@ -16,7 +16,7 @@ pipeline {
     //registry = "irajkoohi@gmail.com/jenkins-kubernetes-deployment"
     //registryCredential = 'Ist1337#%'        
   }
-    
+  agent any  
   stages {  
       
     stage('Checkout Source') {
