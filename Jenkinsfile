@@ -14,8 +14,8 @@ pipeline {
     //registry = "<dockerhub-username>/<repo-name>"
     //registryCredential = '<dockerhub-credential-name>'  
     
-    //registry = "irajkoohi/react-app"
-    //registryCredential = "Ist1337#%"       
+    registry = "irajkoohi/react-app"
+    registryCredential = "Ist1337#%"       
   }
   
   stages {  
