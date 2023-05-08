@@ -14,8 +14,8 @@ pipeline {
     //registry = "<dockerhub-username>/<repo-name>"
     //registryCredential = '<dockerhub-credential-name>'  
     
-    registry = "irajkoohi/react-app"
-    registryCredential = "Ist1337#%"       
+    //registry = "irajkoohi/react-app"
+    //registryCredential = "Ist1337#%"       
   }
   
   stages {  
@@ -34,14 +34,14 @@ pipeline {
     }
     
     // This Jenkins Pipeline stage will use the created Dockerfile to build a Docker image named "react-app"  
-    /*stage('Building image') {
+    stage('Building image') {
       steps{
         script {
           dockerImage = docker.builddockerImageName
           //dockerImage = docker.build registry + ":$BUILD_NUMBER"
         }
       }
-    }*/   
+    }  
     
     /*stage('Pushing Image') {
       environment {
