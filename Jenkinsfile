@@ -32,7 +32,12 @@ pipeline {
       	sh 'mvn clean install'
       }
     }*/
-  
+    
+    stage('Initialize'){
+      def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }  
+    
     // This Jenkins Pipeline stage will use the created Dockerfile to build a Docker image named "react-app"
     stage('Build image') {
       steps {
