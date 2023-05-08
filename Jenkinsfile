@@ -12,8 +12,8 @@ pipeline {
       steps {
         // git 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'
         
-        /*git branch: 'my_specific_branch',
-            credentialsId: 'my_cred_id',
+        /*git branch: 'main',
+            credentialsId: 'GitHub_Credentials',
             url: 'https://github.com/irajkooh/jenkins-kubernetes-deployment.git'  
         //sh "ls -lat"  */
         
