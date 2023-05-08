@@ -36,7 +36,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build registry + dockerImageName
+          dockerImage = docker.build registry + "react-app"
           //dockerImage = docker.build registry + ":$BUILD_NUMBER"
         }
       }
